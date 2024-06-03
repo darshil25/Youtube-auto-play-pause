@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Auto Pause/Resume",
+  "version": "1.0",
+  "description": "Automatically pauses YouTube video when switching to another app and resumes when switching back.",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": [
+    "*://www.youtube.com/*"
+  ],
+  "icons": {
+    "48": "icons8-youtube-48.png",
+    "128": "icons8-youtube-128.png"
+  }
+}
