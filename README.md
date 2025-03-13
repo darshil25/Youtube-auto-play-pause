@@ -14,13 +14,13 @@ Follow these steps to load the extension into Chrome:
 1. **Clone the repository:**
     ```sh
     git clone https://github.com/darshil25/Youtube-auto-play-pause.git
-    cd your-repo-name
+    cd Youtube-auto-play-pause
     ```
 
 2. **Ensure your directory structure looks like this:**
 
     ```
-    your-repo-name/
+    Youtube-auto-play-pause/
     ├── manifest.json
     ├── background.js
     ├── content.js
